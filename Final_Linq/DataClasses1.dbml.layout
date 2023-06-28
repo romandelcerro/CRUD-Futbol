@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataClasses1">
+  <DataContextMoniker Name="/DataClasses1DataContext" />
+  <nestedChildShapes>
+    <classShape Id="a3889fa5-e9d1-4fb0-9b1c-27a4f23ec710" absoluteBounds="1.75, 1.5, 2, 1.3862939453125">
+      <DataClassMoniker Name="/DataClasses1DataContext/Liga" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0ee23a32-fac3-4b95-b5fa-499714531730" absoluteBounds="1.7650000000000001, 1.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bfa1dadb-78a1-4d56-b394-9de3e762b2c2" absoluteBounds="5.5, 1.5, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/DataClasses1DataContext/Equipos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d5b6a9ae-e8c3-42b7-b999-35bd38a43de2" absoluteBounds="5.515, 1.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.75 : 2.19314697265625); (5.5 : 2.19314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClasses1DataContext/Liga/Liga_Equipos" />
+      <nodes>
+        <classShapeMoniker Id="a3889fa5-e9d1-4fb0-9b1c-27a4f23ec710" />
+        <classShapeMoniker Id="bfa1dadb-78a1-4d56-b394-9de3e762b2c2" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

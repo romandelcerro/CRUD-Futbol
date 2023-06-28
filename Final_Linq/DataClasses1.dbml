@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Futbol" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-5NJK22P\SQLEXPRESS;Initial Catalog=Futbol;Integrated Security=True" SettingsObjectName="Final_Linq.Properties.Settings" SettingsPropertyName="FutbolConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Liga" Member="Liga">
+    <Type Name="Liga">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="País" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Liga_Equipos" Member="Equipos" ThisKey="Nombre" OtherKey="Liga" Type="Equipos" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Equipos" Member="Equipos">
+    <Type Name="Equipos">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Estadio" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Valor_Equipo" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="Liga" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Num_Jugadores" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Escudo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Liga_Equipos" Member="Liga1" ThisKey="Liga" OtherKey="Nombre" Type="Liga" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,76 @@
+﻿<Window x:Class="Final_Linq.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Final_Linq"
+        mc:Ignorable="d"
+        Title="Menú" Height="1000" Width="2000"
+        WindowState="Maximized"
+        Icon="/Imágenes/balon.png">
+    <Window.Resources>
+
+    </Window.Resources>
+
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Border Style="{StaticResource borderCabecera}" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2"></Border>
+
+        <TextBlock Style="{StaticResource textoCabecera}" HorizontalAlignment="Center" Text="Fútbol-Manía" VerticalAlignment="Center" Grid.ColumnSpan="2"></TextBlock>
+
+        <Image HorizontalAlignment="Left" Margin="0,-14,0,0" Source="/Imágenes/balon.png" Width="100"/>
+
+        <StackPanel Grid.Row="1" Grid.ColumnSpan="2">
+            <Image Source="/Imágenes/fondo.jpg"></Image>
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" Grid.Row="1" Grid.ColumnSpan="2">
+            <StackPanel Orientation="Horizontal" Margin="170,200,170,0" HorizontalAlignment="Center">
+                <Button Height="120" Width="400" Margin="0,0,100,0" Click="Button_Buscador">
+                    <Button.Content>
+                        <StackPanel Orientation="Horizontal" Width="400">
+                            <Image Source="/Imágenes/buscar.png" Margin="-50,-5,-23,0" Width="208" Height="157"></Image>
+                            <Label VerticalAlignment="Center">Buscador</Label>
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
+                <Button Height="120" Width="400" Click="Button_Insertar">
+                    <Button.Content>
+                        <StackPanel Orientation="Horizontal" Width="400">
+                            <Image Source="/Imágenes/insertar.png" Margin="-15,0,-50,0"></Image>
+                            <Label VerticalAlignment="Center">Insertar</Label>
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="170,180,170,0" HorizontalAlignment="Center">
+                <Button Height="120" Width="400" Margin="0,0,100,0" Click="Button_Borrar">
+                    <Button.Content>
+                        <StackPanel Orientation="Horizontal" Width="400">
+                            <Image Source="/Imágenes/borrar.png" Margin="-50,3,-40,0" Height="211" Width="230"></Image>
+                            <Label VerticalAlignment="Center">Borrar</Label>
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
+                <Button Height="120" Width="400" Click="Button_Actualizar">
+                    <Button.Content>
+                        <StackPanel Orientation="Horizontal" Width="400">
+                            <Image Source="/Imágenes/actualizar.png" Margin="-115,5,-120,0" Width="360" Height="261"></Image>
+                            <Label VerticalAlignment="Center">Actualizar</Label>
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
+            </StackPanel>
+        </StackPanel>
+
+    </Grid>
+</Window>
