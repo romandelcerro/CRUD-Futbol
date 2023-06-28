@@ -7,6 +7,7 @@ This is a soccer CRUD, which adds, deletes, searches and updates soccer teams fr
 - .Net
 - WPF
 - C#
+- Linq
 
 ## Getting Started
 
